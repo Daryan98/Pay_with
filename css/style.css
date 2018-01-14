@@ -269,4 +269,71 @@ section.container div.bitcoin-section::before {
   border-left: 1px solid #011627;
   z-index: 3;
 }
+
+@media screen and (max-width: 1259px) {
+  section.container div.pay-with-card form input:nth-child(4) {
+    width: 45%;
+  }
+  section.container div.pay-with-card div.select-card {
+    width: 50%;
+    margin-top: 16px;
+  }
+  section.container div.pay-with-card div.select-card img {
+    width: 21%;
+  }
+  section.container div.pay-with-card::before {
+    top: 15%;
+  }
+  section.container div.paypal-section::before {
+    top: 40%;
+  }
+  section.container div.bitcoin-section::before {
+    top: 64%;
+  }
+}
+
+@media screen and (max-width: 1049px) {
+  section.container {
+    margin-top: 9vh;
+    width: 80%;
+    height: 600px;
+    padding: 45px 90px;
+  }
+  section.container div.pay-with-card form input:nth-child(4) {
+    width: 100%;
+  }
+  section.container div.pay-with-card div.select-card {
+    width: 100%;
+    margin-top: 13px;
+    padding-right: 9%;
+    margin: 0 auto;
+  }
+  section.container div.pay-with-card div.select-card img {
+    width: 20%;
+  }
+  section.container div.pay-with-card::before {
+    top: 14%;
+  }
+  section.container div.paypal-section::before {
+    top: 41%;
+  }
+  section.container div.bitcoin-section::before {
+    top: 65%;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  section.container {
+    margin-top: 9vh;
+    width: 95%;
+    height: 600px;
+    padding: 40px 80px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */
