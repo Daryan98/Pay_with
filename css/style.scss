@@ -10,9 +10,9 @@ body {
 }
 
 section.container {
-    width: 60%;
-    height: 70vh;
-    margin-top: 15vh;
+    width: 70%;
+    height: 550px;
+    margin-top: 13vh;
     padding: 50px 120px;
     border-radius: 10px;
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
@@ -21,227 +21,250 @@ section.container {
     .row {
         height: 100%;
     }
-}
-
-div.pay-with {
-    display: inline;
-    float: left;
-    width: 10%;
-    ul {
-        height: 100%;
-        height: 80%;
-        margin-top: 90%;
-        li {
-            display: block;
-            width: 100%;
-            height: 30%;
-            list-style: none;
-            position: relative;
-            text-align: center;
-            p {
-                color: rgb(190, 190, 190);
-                font-size: .8em;
-                font-weight: 500;
-            }
-            &:nth-child(1) {
-                p {
-                    margin-top: 15px;
-                }
-            }
-            img {
-                width: 60px;
-                -webkit-filter: grayscale(100%);
-                filter: grayscale(100%);
-                transition: all .2s ease-out;
-                &:hover {
-                    transform: scale(1.2);
-                    -webkit-filter: grayscale(0%);
-                    /* Safari 6.0 - 9.0 */
-                    filter: grayscale(0%);
-                }
-            }
-            & {
-                img.active {
-                    transform: scale(1.2);
-                    -webkit-filter: grayscale(0%);
-                    filter: grayscale(0%);
-                }
-            }
-        }
-    }
-}
-
-div.pay-with-card {
-    padding: 50px;
-    display: inline;
-    float: right;
-    width: 80%;
-    margin-left: 10%;
-    background-color: #FFF;
-    border-radius: 10px;
-    transition: all .3s ease;
-    position: relative;
-    &::before {
-        content: "";
-        position: absolute;
-        top: 20%;
-        left: -7.5px;
-        height: 20px;
-        width: 20px;
-        background: #fff;
-        transform: rotate(45deg);
-        transform-origin: top right;
-        border-bottom: 1px solid #011627;
-        border-left: 1px solid #011627;
-        z-index: 3;
-    }
-    &:hover {
-        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
-    }
-    h1 {
-        color: rgb(151, 151, 151);
-        font-size: 1.5em;
-        font-family: "fira sans";
-        font-weight: 400;
-    }
-    div.select-card {
-        width: 50%;
+    div.pay-with {
         display: inline;
-        margin-top: 80px;
-        img {
-            height: 33px;
-            float: left;
-            margin-left: 8px;
-            margin-top: 38px;
-            opacity: .5;
-            transition: all .2s ease;
-            &:hover {
-                box-shadow: 0px 6px 5px -2px rgba(0, 0, 0, .3);
-                margin-top: 35px;
-                opacity: 1;
-            }
-        }
-    }
-    form {
-        width: 100%;
-        text-align: center;
-        margin: 0px auto;
-        input {
-            border: 0;
-            outline: none;
-            padding: .6em;
-            border-radius: 4px;
-            display: inline;
-            float: left;
-            width: 30%;
-            margin-left: 3.3333%;
-            margin-top: 2em;
-            font-family: 'Merriweather', sans-serif;
-            border: 1.5px solid rgb(236, 236, 236); // box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-            &:focus {
-                border: 1.5px solid #011627;
-            }
-            &:nth-child(1) {
-                margin-left: 0;
-            }
-        }
-        &.first-form {
-            input:nth-child(4) {
-                width: 45%;
-                display: inline;
-                float: left;
-                margin-left: 0;
-            }
-        }
-        &.second-form {
-            width: 100%;
-            height: 150px;
-            top: 48%;
-            position: relative;
-            div.submit {
-                padding: 5px 0px;
-                position: absolute;
+        float: left;
+        width: 10%;
+        ul {
+            height: 100%;
+            height: 80%;
+            margin-top: 90%;
+            li {
+                display: block;
                 width: 100%;
-                height: 40px;
-                bottom: 10px;
-                #submit {
-                    border: 0;
-                    width: 100%;
-                    height: 45px;
-                    border-radius: 5px;
-                    color: white;
-                    background: #011627;
-                    cursor: pointer;
-                    transition: all .1s ease-out;
+                height: 30%;
+                list-style: none;
+                position: relative;
+                text-align: center;
+                p {
+                    color: rgb(190, 190, 190);
+                    font-size: .8em;
+                    font-weight: 500;
+                }
+                &:nth-child(1) {
+                    p {
+                        margin-top: 15px;
+                    }
+                }
+                img {
+                    width: 60px;
+                    -webkit-filter: grayscale(100%);
+                    filter: grayscale(100%);
+                    opacity: .7;
+                    transition: all .2s ease-out;
                     &:hover {
-                        box-shadow: 0 4px 8px rgba(#000, .2);
-                        margin-top: -2px;
+                        transform: scale(1.2);
+                        -webkit-filter: grayscale(0%);
+                        /* Safari 6.0 - 9.0 */
+                        filter: grayscale(0%);
+                        opacity: .8;
+                    }
+                }
+                & {
+                    img.active {
+                        transform: scale(1.2);
+                        -webkit-filter: grayscale(0%);
+                        filter: grayscale(0%);
+                        opacity: 1;
                     }
                 }
             }
-            input {
-                &:nth-child(1) {
-                    position: absolute;
-                    top: 0%;
-                    left: 0;
+        }
+    }
+    div.pay-with-card {
+        padding: 50px;
+        display: inline;
+        float: right;
+        width: 80%;
+        margin-left: 10%;
+        background-color: #FFF;
+        border-radius: 10px;
+        transition: all .3s ease;
+        position: relative;
+       
+        &::before {
+            content: "";
+            position: absolute;
+            top: 20%;
+            left: -7.5px;
+            height: 20px;
+            width: 20px;
+            background: #fff;
+            transform: rotate(45deg);
+            transform-origin: top right;
+            border-bottom: 1px solid #011627;
+            border-left: 1px solid #011627;
+            z-index: 3;
+        } 
+        &:hover {
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: rgb(151, 151, 151);
+            font-size: 1.5em;
+            font-family: "fira sans";
+            font-weight: 400;
+        }
+       
+        form {
+            width: 100%;
+            text-align: center;
+            margin: 0px auto;
+            display: -moz-flex;
+            display: -webkit-flex;
+            display: flex;
+            -moz-flex-flow: row wrap;
+            -webkit-flex-flow: row wrap;
+            flex-flow: row wrap;
+            -moz-justify-content: flex-start;
+            -webkit-justify-content: flex-start;
+            justify-content: flex-start;
+            align-items: stretch;
+
+            input,
+            div {
+                font-size:.9em;
+                outline: 0;
+                padding: .6em;
+                margin:14px 4px;
+                color:rgb(160, 160, 160);
+                background:#FFF;
+                  -moz-flex: 1 0 auto;
+                  -webkit-flex: 1 0 auto;
+                  flex: 1 0 auto; // flex: 3;
+                border-radius: 4px;
+                display: inline;
+                width: 30%;
+               
+                border: 1.5px solid rgb(236, 236, 236); 
+                box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+                &:focus {
+                    border-bottom: 1.5px solid #011627;
                 }
-                &:nth-child(2) {
-                    position: absolute;
-                    top: 0%;
-                    width: 40%;
-                    left: 30%;
+            } 
+            input {
+                &:nth-child(4){
+                    width: 50%;
+                    
+                }
+            }
+            div{
+                border: none; 
+                box-shadow: none;
+                padding: .6em;
+                
+            
+                &.submit {
+                    padding: 5px 0px;
+                    width: 100%;
+                    height: 40px;
+                 
+                    #submit {
+                        border: 0;
+                        width: 100%;
+                        height: 45px;
+                        border-radius: 5px;
+                        color: white;
+                        background: #011627;
+                        cursor: pointer;
+                        transition: all .1s ease-out;
+                        position: relative;
+                        z-index: 1;
+                        &:hover {
+                            box-shadow: 0 4px 5px rgba(#000, .3);
+                            margin-top: -3px;
+                        }
+                        &:active{
+                            margin-top: 0;
+                            box-shadow: none;
+                            
+                            outline: none;
+                        }
+                    }
                 }
             }
         }
-    }
-    div.content {
-        text-align: center;
-        img {
-            width: 50%;
-            margin-left: 50%;
-            transform: translateX(-50%);
-            padding-bottom: 25px;
-            margin-top: 20%;
-        }
-        a{
-            text-decoration: none;
-            color: rgb(177, 177, 177);
-            font-size: .9em;
-            font-weight: bold;
-        }
-    }
-}
 
-div.paypal-section{
-    
-    &::before {
-        content: "";
-        position: absolute;
-        top: 46.5%;
-        left: -7.5px;
-        height: 20px;
-        width: 20px;
-        background: #fff;
-        transform: rotate(45deg);
-        transform-origin: top right;
-        border-bottom: 1px solid #011627;
-        border-left: 1px solid #011627;
-        z-index: 3;
+
+        // Select card to Pay In Form
+        div.select-card {
+            width: 45%;
+            display: inline;
+            padding: 0;
+            img {
+                width: 22%;
+                float: right;
+                margin-left: 8px;
+                opacity: .5;
+                margin-top: 2px;
+                padding: 0;
+                transition: all .2s ease;
+                &:hover {
+                    box-shadow: 0px 6px 5px -2px rgba(0, 0, 0, .3);
+                    margin-top: -3px;
+                    opacity: 1;
+                }
+                &:nth-child(4){
+                    margin-left: 0;
+                }
+            }
+        }
+
+
+
+
+
+
+
+        // Paypal aND Bitcoin Page
+        div.content {
+            text-align: center;
+            img {
+                width: 50%;
+                margin-left: 50%;
+                transform: translateX(-50%);
+                padding-bottom: 25px;
+                margin-top: 20%;
+            }
+            a {
+                text-decoration: none;
+                color: rgb(177, 177, 177);
+                font-size: .9em;
+                font-weight: bold;
+            }
+        }
     }
-}
-div.bitcoin-section {
-    &::before {
-        content: "";
-        position: absolute;
-        top: 70%;
-        left: -7.5px;
-        height: 20px;
-        width: 20px;
-        background: #fff;
-        transform: rotate(45deg);
-        transform-origin: top right;
-        border-bottom: 1px solid #011627;
-        border-left: 1px solid #011627;
-        z-index: 3;
+    div.paypal-section {
+        &::before {
+            content: "";
+            position: absolute;
+            top: 46.5%;
+            left: -7.5px;
+            height: 20px;
+            width: 20px;
+            background: #fff;
+            transform: rotate(45deg);
+            transform-origin: top right;
+            border-bottom: 1px solid #011627;
+            border-left: 1px solid #011627;
+            z-index: 3;
+        }
+    }
+    div.bitcoin-section {
+        &::before {
+            content: "";
+            position: absolute;
+            top: 70%;
+            left: -7.5px;
+            height: 20px;
+            width: 20px;
+            background: #fff;
+            transform: rotate(45deg);
+            transform-origin: top right;
+            border-bottom: 1px solid #011627;
+            border-left: 1px solid #011627;
+            z-index: 3;
+        }
     }
 }
