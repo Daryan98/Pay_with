@@ -138,7 +138,7 @@ section.container div.pay-with-card form div {
   outline: 0;
   padding: .6em;
   margin: 14px 4px;
-  color: #a0a0a0;
+  color: #777777;
   background: #FFF;
   -moz-flex: 1 0 auto;
   -webkit-flex: 1 0 auto;
@@ -205,7 +205,7 @@ section.container div.pay-with-card div.select-card img {
   width: 22%;
   float: right;
   margin-left: 8px;
-  opacity: .5;
+  opacity: .7;
   margin-top: 2px;
   padding: 0;
   transition: all .2s ease;
