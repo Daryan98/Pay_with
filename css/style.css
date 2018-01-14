@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+section.container {
+  width: 60%;
+  height: 70vh;
+  margin-top: 15vh;
+  padding: 50px 120px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+  background-color: #EBEDF2 !important;
+  position: relative;
+}
+
+section.container .row {
+  height: 100%;
+}
+
+div.pay-with {
+  display: inline;
+  float: left;
+  width: 10%;
+}
+
+div.pay-with ul {
+  height: 100%;
+  height: 80%;
+  margin-top: 90%;
+}
+
+div.pay-with ul li {
+  display: block;
+  width: 100%;
+  height: 30%;
+  list-style: none;
+  position: relative;
+  text-align: center;
+}
+
+div.pay-with ul li p {
+  color: #bebebe;
+  font-size: .8em;
+  font-weight: 500;
+}
+
+div.pay-with ul li:nth-child(1) p {
+  margin-top: 15px;
+}
+
+div.pay-with ul li img {
+  width: 60px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: all .2s ease-out;
+}
+
+div.pay-with ul li img:hover {
+  transform: scale(1.2);
+  -webkit-filter: grayscale(0%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+}
+
+div.pay-with ul li img.active {
+  transform: scale(1.2);
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+div.pay-with-card {
+  padding: 50px;
+  display: inline;
+  float: right;
+  width: 80%;
+  margin-left: 10%;
+  background-color: #FFF;
+  border-radius: 10px;
+  transition: all .3s ease;
+  position: relative;
+}
+
+div.pay-with-card::before {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: -7.5px;
+  height: 20px;
+  width: 20px;
+  background: #fff;
+  transform: rotate(45deg);
+  transform-origin: top right;
+  border-bottom: 1px solid #011627;
+  border-left: 1px solid #011627;
+  z-index: 3;
+}
+
+div.pay-with-card:hover {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+div.pay-with-card h1 {
+  color: #979797;
+  font-size: 1.5em;
+  font-family: "fira sans";
+  font-weight: 400;
+}
+
+div.pay-with-card div.select-card {
+  width: 50%;
+  display: inline;
+  margin-top: 80px;
+}
+
+div.pay-with-card div.select-card img {
+  height: 33px;
+  float: left;
+  margin-left: 8px;
+  margin-top: 38px;
+  opacity: .5;
+  transition: all .2s ease;
+}
+
+div.pay-with-card div.select-card img:hover {
+  box-shadow: 0px 6px 5px -2px rgba(0, 0, 0, 0.3);
+  margin-top: 35px;
+  opacity: 1;
+}
+
+div.pay-with-card form {
+  width: 100%;
+  text-align: center;
+  margin: 0px auto;
+}
+
+div.pay-with-card form input {
+  border: 0;
+  outline: none;
+  padding: .6em;
+  border-radius: 4px;
+  display: inline;
+  float: left;
+  width: 30%;
+  margin-left: 3.3333%;
+  margin-top: 2em;
+  font-family: 'Merriweather', sans-serif;
+  border: 1.5px solid #ececec;
+}
+
+div.pay-with-card form input:focus {
+  border: 1.5px solid #011627;
+}
+
+div.pay-with-card form input:nth-child(1) {
+  margin-left: 0;
+}
+
+div.pay-with-card form.first-form input:nth-child(4) {
+  width: 45%;
+  display: inline;
+  float: left;
+  margin-left: 0;
+}
+
+div.pay-with-card form.second-form {
+  width: 100%;
+  height: 150px;
+  top: 48%;
+  position: relative;
+}
+
+div.pay-with-card form.second-form div.submit {
+  padding: 5px 0px;
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  bottom: 10px;
+}
+
+div.pay-with-card form.second-form div.submit #submit {
+  border: 0;
+  width: 100%;
+  height: 45px;
+  border-radius: 5px;
+  color: white;
+  background: #011627;
+  cursor: pointer;
+  transition: all .1s ease-out;
+}
+
+div.pay-with-card form.second-form div.submit #submit:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: -2px;
+}
+
+div.pay-with-card form.second-form input:nth-child(1) {
+  position: absolute;
+  top: 0%;
+  left: 0;
+}
+
+div.pay-with-card form.second-form input:nth-child(2) {
+  position: absolute;
+  top: 0%;
+  width: 40%;
+  left: 30%;
+}
+
+div.pay-with-card div.content {
+  text-align: center;
+}
+
+div.pay-with-card div.content img {
+  width: 50%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  padding-bottom: 25px;
+  margin-top: 20%;
+}
+
+div.pay-with-card div.content a {
+  text-decoration: none;
+  color: #b1b1b1;
+  font-size: .9em;
+  font-weight: bold;
+}
+
+div.paypal-section::before {
+  content: "";
+  position: absolute;
+  top: 46.5%;
+  left: -7.5px;
+  height: 20px;
+  width: 20px;
+  background: #fff;
+  transform: rotate(45deg);
+  transform-origin: top right;
+  border-bottom: 1px solid #011627;
+  border-left: 1px solid #011627;
+  z-index: 3;
+}
+
+div.bitcoin-section::before {
+  content: "";
+  position: absolute;
+  top: 70%;
+  left: -7.5px;
+  height: 20px;
+  width: 20px;
+  background: #fff;
+  transform: rotate(45deg);
+  transform-origin: top right;
+  border-bottom: 1px solid #011627;
+  border-left: 1px solid #011627;
+  z-index: 3;
+}
+/*# sourceMappingURL=style.css.map */
